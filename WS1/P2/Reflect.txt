@@ -1,0 +1,25 @@
+/*
+Name - MEHTAB SINGH JAGDE
+Student ID - 119003226
+Email - mjagde@myseneca.ca
+Section - ZBB
+Date - 21 / 01 / 2024
+
+We have completed this assignment ourselves respecting academic integrity.
+
+*/
+
+1---->
+Internal Linkage: When a variable or function has internal linkage, it means that its scope is limited to the translation unit where it is defined. Other translation units cannot access this variable or function. In the provided code, the g_sysClock variable has internal linkage because it is declared with the static keyword and is defined outside of any namespace or class, making it accessible only within the same translation unit.
+
+External Linkage: Variables or functions with external linkage are accessible across multiple translation units. They can be declared in one translation unit and then referenced in another. The m_count variable in the Event class has external linkage because it is declared outside any function or class, and it is later used in the implementation of member functions.
+
+2---->
+Static variables in C++ are variables that retain their values across multiple calls to a function or throughout the lifetime of a program. In the provided code:
+
+m_count is a static member variable of the Event class, and it is used to maintain a count of the total number of events created. It is useful for assigning unique identifiers to each event.
+
+g_sysClock is a static global variable that represents the system clock. It is useful for keeping track of the current time for events.
+
+3---->
+I did a lot of changes. Out of which the main one was implementing the rule of three for safely allocating and deallocating memory. The rule of three contains a copy constructor, copy assignment operator and a destructor. Other than that, In part 1 m_description was an array of size 128 whereas in this part it is a pointer.
