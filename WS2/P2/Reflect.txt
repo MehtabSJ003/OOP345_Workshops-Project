@@ -1,0 +1,21 @@
+/*
+Name - MEHTAB SINGH JAGDE
+Student ID - 119003226
+Email - mjagde@myseneca.ca
+Section - ZBB
+Date - 28 / 01 / 2024
+
+We have completed this assignment ourselves respecting academic integrity.
+
+*/
+
+1---->
+A move operation, which usually just requires the manipulation of pointers or handles and can be completed extremely quickly, shifts ownership of the resources from one object to another. However, a copy operation entails making a new object and copying its contents, which can take a while, particularly when copying big amounts of data and working with dynamic memory allocation.
+
+2---->
+The code reads the input file twice in order to fill the dynamic array using the StringSet constructor's method of reading input files. In order to calculate the size of the dynamic array (m_currentString), it first counts the number of strings in the file. After that, it reads the file once again in order to add strings to the array.
+
+3---->
+std::steady_clock::chrono This clock is not in sync with the system clock; rather, it is intended to monitor time intervals. It offers a monotonic clock, which is unaffected by adjustments or changes over time (such as leap seconds). It is unaffected by changes in system time and is useful for calculating the elapsed time between two places.
+
+System_clock (std::chrono::) The system-wide real-time clock is represented by this clock. It might not have a steady tick rate and be subject to modifications (like changes in daylight saving time). It works well for showing the time on a wall clock right now.
