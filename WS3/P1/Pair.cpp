@@ -5,8 +5,8 @@
 #include <iomanip>
 namespace seneca {
 	Pair::Pair() {
-		m_key = "No Key";
-		m_value = "No Value";
+		m_key = "";
+		m_value = "";
 	}
 	bool Pair::operator==(const Pair& src) {
 		return this->getKey() == src.m_key;
