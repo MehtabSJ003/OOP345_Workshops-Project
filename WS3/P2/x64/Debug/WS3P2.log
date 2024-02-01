@@ -1,0 +1,10 @@
+﻿  w3_p2.cpp
+C:\Users\hcnd2\OneDrive\Desktop\OOP345\OOP-Workshops-main\WS03\part 2\WS3P2\Set.h(37,1): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\hcnd2\OneDrive\Desktop\OOP345\OOP-Workshops-main\WS03\part 2\WS3P2\Set.h(18,1): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\hcnd2\OneDrive\Desktop\OOP345\OOP-Workshops-main\WS03\part 2\WS3P2\Set.h(13,34): message : while compiling class template member function 'bool seneca::Set<long>::add(const T &)'
+          with
+          [
+              T=long
+          ]
+C:\Users\hcnd2\OneDrive\Desktop\OOP345\OOP-Workshops-main\WS03\part 2\WS3P2\w3_p2.cpp(54,69): message : see reference to class template instantiation 'seneca::Set<long>' being compiled
+  WS3P2.vcxproj -> C:\Users\hcnd2\OneDrive\Desktop\OOP345\OOP-Workshops-main\WS03\part 2\WS3P2\x64\Debug\WS3P2.exe
