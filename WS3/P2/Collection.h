@@ -8,12 +8,12 @@ namespace seneca {
     template <typename T, int CAPACITY>
     class Collection {
         T m_elements[CAPACITY];
-		// static because it is a class variable
+        // static because it is a class variable
         static T m_dummy;
-		size_t m_size;
+	size_t m_size;
     public:
         Collection();
-		virtual ~Collection();
+	virtual ~Collection();
         size_t size() const;
         std::ostream& display(std::ostream& os = std::cout) const;
         virtual bool add(const T& item);
