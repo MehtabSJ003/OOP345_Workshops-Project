@@ -9,7 +9,7 @@ namespace seneca {
 		std::string m_age{};
 		std::string m_id{};
 		std::string* m_courses{};
-		int m_count;
+		size_t m_count;
 	public:
 		Student(const Student* src) = delete;
 		Student* operator=(const Student* src) = delete;
