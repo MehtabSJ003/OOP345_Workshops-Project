@@ -1,0 +1,5 @@
+﻿  SongCollection.cpp
+D:\OOP345\OOP-Workshops-main\WS07\part 2\WS7P2\SongCollection.cpp(85,25): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  w7_p2.cpp
+  Generating Code...
+  WS7P2.vcxproj -> D:\OOP345\OOP-Workshops-main\WS07\part 2\WS7P2\x64\Debug\WS7P2.exe
