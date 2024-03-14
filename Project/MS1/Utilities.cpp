@@ -31,11 +31,9 @@ namespace seneca {
 	}
 	std::string Utilities::extractToken(const std::string& str, size_t& next_pos, bool& more) {
 		std::string string = "";
-		static size_t newWidth = 0; //stores the biggest number for tempStr length.
+		static size_t newWidth = 0;
 		size_t index = 0;
 		more = false;
-
-		//if delimiter is found at next_pos, throw an error.
 		if (str.find(m_delimiter, next_pos) == next_pos)
 		{
 			more = false;
@@ -44,7 +42,6 @@ namespace seneca {
 		}
 		else
 		{
-			//error handling for std::string find method in case there is nothing found.
 			if (str.find(m_delimiter, next_pos) >= str.length())
 			{
 				index = str.length();
@@ -54,9 +51,7 @@ namespace seneca {
 				index = str.find(m_delimiter, next_pos);
 			}
 			string = str.substr(next_pos, index - next_pos + 1);
-			//adding current size of string to next_pos
 			next_pos += string.length();
-			//if next_pos >= initial string's length, it sets more to false to avoid reading from the string.
 			if (next_pos >= str.length())
 			{
 				more = false;
@@ -67,13 +62,11 @@ namespace seneca {
 				more = true;
 			}
 			string = trim(string);
-			//updating the width to max value of tempStr's size.
 			if (newWidth < string.size())
 			{
 				newWidth = string.size();
 				m_widthField = newWidth;
 			}
-			//sets newWidth back to zero once all values are read.
 			if (more == false)
 			{
 				newWidth = 0;
