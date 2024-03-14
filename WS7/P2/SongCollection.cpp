@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "SongCollection.h"
 #include <iostream>
+#include <cstring>
 #include <fstream>
 #include <string>
 #include <iomanip>
