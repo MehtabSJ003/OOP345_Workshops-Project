@@ -114,7 +114,7 @@ namespace seneca {
 					m_lstItem[i]->m_serialNumber = station.getNextSerialNumber();
 					m_lstItem[i]->m_isFilled = true;
 					os << std::setw(11) << std::right;
-					os << "Filled " << m_name << ", " << m_product << " [" << m_lstItem[i]->m_itemName << "] " << std::endl;
+					os << "Filled " << m_name << ", " << m_product << " [" << m_lstItem[i]->m_itemName << "]" << std::endl;
 					filled = true;
 				}
 				else {
